@@ -1,5 +1,5 @@
 public class operator {
-    public static void main(String[] args) {
+    public static void main(javaString[] args) {
 //        int solvedThisWeek =25;
 //        int solvedLastWeek=15;
 //

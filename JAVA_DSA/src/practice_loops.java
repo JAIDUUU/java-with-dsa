@@ -1,7 +1,5 @@
-import java.util.Scanner;
-
 public class practice_loops {
-    public static void main(String[] args) {
+    public static void main(javaString[] args) {
 
 //        Practice Questions
 //        1.Print numbers from 1 to 10 using for loop.

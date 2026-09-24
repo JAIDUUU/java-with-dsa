@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class input_output {
-    public static void main (String[] args) {
+    public static void main (javaString[] args) {
 
 
                //1 basic output
@@ -61,15 +61,15 @@ public class input_output {
 
 
             //Practice Exercise
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter your username");
-        String username=sc.next();
-        System.out.println("enter your solving problem ");
-        int problem=sc.nextInt();
-        System.out.println("weekly target");
-        int target=sc.nextInt();
-
-        System.out.printf("you :%s solved problem :%d weekly target is :%d",username,problem,target);
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("enter your username");
+//        javaString username=sc.next();
+//        System.out.println("enter your solving problem ");
+//        int problem=sc.nextInt();
+//        System.out.println("weekly target");
+//        int target=sc.nextInt();
+//
+//        System.out.printf("you :%s solved problem :%d weekly target is :%d",username,problem,target);
     }
 
 }

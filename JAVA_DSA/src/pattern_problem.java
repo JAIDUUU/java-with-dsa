@@ -1,8 +1,7 @@
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class pattern_problem {
-    static void main(String[] args) {
+    static void main(javaString[] args) {
 
         //Pattern 1: Solid Square Pattern
 
@@ -105,7 +104,42 @@ public class pattern_problem {
 //            System.out.println();
 //        }
 
+        //Inverted Solid Pyramid Pattern
+//        System.out.println("enter no of solid pyramid");
+//        int n=sc.nextInt();
+//
+//        for(int row=1;row<=n;row++){
+//            for (int space=1;space<=row;space++){
+//                System.out.print(" ");
+//            }
+//            for (int column=1;column<=n+1-row;column++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
 
+
+
+            //Solid Diamond Pattern
+//        System.out.println("enter the diamond pattern no ");
+//        int n=sc.nextInt();
+//        for(int row=1;row<=n;row++){
+//            for (int space=1;space<=n-row;space++){
+//                System.out.print("  ");
+//            }
+//            for (int star=1;star<=2*row-1;star++)
+//                System.out.print("* ");
+//            System.out.println();
+//        }
+//        for (int row = n - 1; row >= 1; row--) {
+//            for (int space = 1; space <= n - row; space++) {
+//                System.out.print("  ");
+//            }
+//            for (int star = 1; star <= 2 * row - 1; star++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
 
 
 

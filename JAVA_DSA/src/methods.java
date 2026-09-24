@@ -1,7 +1,5 @@
-import java.awt.image.BandedSampleModel;
-
 public class methods {
-    public static void main (String[] args){
+    public static void main (javaString[] args){
 ////        printTable(5);
 ////        printSum();
 ////        printSum(10,20);
