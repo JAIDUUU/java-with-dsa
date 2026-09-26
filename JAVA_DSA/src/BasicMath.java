@@ -1,203 +1,155 @@
+import java.util.Scanner;
+
 public class BasicMath {
 
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
 
-        // 1. Count Digits
-        int n = 12345;
-        int count = 0;
+        //problem 1
+        System.out.println("Enter the number");
+        int digit=sc.nextInt();
+//        System.out.println("number of digit ="+Count_digit(digit));
 
-        while (n > 0) {
-            count++;
-            n = n / 10;
-        }
+        //problem 2
+//        System.out.println("sum of this no :"+Sum_of_Digit(digit));
 
-        System.out.println("Digits = " + count);
+        //problem 3
+//        System.out.println("rev number is:"+Reverse_num(digit));
 
+        //topic
+//        Even_Odd(digit);
 
-        // 2. Sum of Digits
-        n = 1234;
-        int sum = 0;
+        //problem 4
+//        Palindrome(digit);
 
-        while (n > 0) {
-            int digit = n % 10;
-            sum = sum + digit;
-            n = n / 10;
-        }
-
-        System.out.println("Sum = " + sum);
+        //problem 5
+//        PrimeNumber(digit);
 
 
-        // 3. Reverse Number
-        n = 1234;
-        int rev = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-            rev = rev * 10 + digit;
-            n = n / 10;
-        }
-
-        System.out.println("Reverse = " + rev);
+        //Problem 6: Factorial
+        System.out.println("factorial of "+digit+"this number is: "+Factorial(digit));
 
 
-        // 4. Even or Odd
-        n = 7;
-
-        if (n % 2 == 0) {
-            System.out.println("Even");
-        } else {
-            System.out.println("Odd");
-        }
 
 
-        // 5. Palindrome
-        n = 121;
-        int original = n;
-        rev = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-            rev = rev * 10 + digit;
-            n = n / 10;
-        }
-
-        if (original == rev) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not Palindrome");
-        }
 
 
-        // 6. Prime Number
-        n = 7;
-        boolean isPrime = true;
 
-        if (n <= 1) {
-            isPrime = false;
-        } else {
-            for (int i = 2; i * i <= n; i++) {
-                if (n % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-        }
-
-        System.out.println(isPrime ? "Prime" : "Not Prime");
-
-
-        // 7. Factorial
-        n = 5;
-        int fact = 1;
-
-        for (int i = 1; i <= n; i++) {
-            fact = fact * i;
-        }
-
-        System.out.println("Factorial = " + fact);
-
-
-        // 8. GCD
-        int a = 12;
-        int b = 18;
-
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-
-        System.out.println("GCD = " + a);
-
-
-        // 9. LCM
-        a = 12;
-        b = 18;
-
-        int x = a;
-        int y = b;
-
-        while (y != 0) {
-            int temp = y;
-            y = x % y;
-            x = temp;
-        }
-
-        int gcd = x;
-        int lcm = (a * b) / gcd;
-
-        System.out.println("LCM = " + lcm);
-
-
-        // 10. Armstrong Number
-        n = 153;
-        original = n;
-        sum = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-            sum = sum + digit * digit * digit;
-            n = n / 10;
-        }
-
-        if (sum == original) {
-            System.out.println("Armstrong Number");
-        } else {
-            System.out.println("Not Armstrong Number");
-        }
-
-
-        // 11. Perfect Number
-        n = 6;
-        sum = 0;
-
-        for (int i = 1; i < n; i++) {
-            if (n % i == 0) {
-                sum = sum + i;
-            }
-        }
-
-        if (sum == n) {
-            System.out.println("Perfect Number");
-        } else {
-            System.out.println("Not Perfect Number");
-        }
-
-
-        // 12. Count Even Digits
-        n = 248531;
-        count = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-
-            if (digit % 2 == 0) {
-                count++;
-            }
-
-            n = n / 10;
-        }
-
-        System.out.println("Even Digits = " + count);
-
-
-        // 13. Print Prime Numbers from 1 to n
-        n = 20;
-
-        for (int num = 2; num <= n; num++) {
-
-            isPrime = true;
-
-            for (int i = 2; i * i <= num; i++) {
-                if (num % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-
-            if (isPrime) {
-                System.out.print(num + " ");
-            }
-        }
     }
+    //Problem 1: Count Digits in a Number
+//    static int Count_digit(int digit){
+//        int count =0;
+//        while (digit>0){
+//            count++;
+//            digit=digit/10;
+//
+//        }
+//        return count;
+//    }
+
+    //Problem 2: Sum of Digits
+//    static int Sum_of_Digit(int digit){
+//        int sum=0;
+//        while (digit>0){
+//            int last_digit=digit%10;
+//            digit=digit/10;
+//            sum=sum+last_digit;
+//
+//        }
+//        return sum;
+//    }
+
+    //Problem 3: Reverse a Number
+//    static int Reverse_num(int digit){
+//        int rev=0;
+//        while (digit>0){
+//            int remove_num=digit%10;
+//            digit=digit/10;
+//            rev=rev*10+remove_num;
+//        }
+//        return rev;
+//    }
+
+    //Problem 4:
+    //4. Even and Odd Number
+//    static void Even_Odd(int digit){
+//        if (digit%2==0){
+//            System.out.println("Even number");
+//        }
+//        else {
+//            System.out.println("odd number");
+//        }
+//
+//    }
+
+
+    //Problem 4: Palindrome Number
+//    static void Palindrome(int digit){
+//        int rev=0;
+//        int original=digit;
+//        while (digit>0){
+//            int rev_num=digit%10;
+//            digit=digit/10;
+//            rev=rev*10+rev_num;
+//
+//        }
+//        if (rev==original){
+//            System.out.println("this is palindrome no");
+//        }
+//        else {
+//            System.out.println("this is not palindrome no");
+//        }
+//    }
+
+
+
+    //Problem 5: Prime Number
+//    static void PrimeNumber(int digit){
+//        boolean PrimeNumber=true;
+//        int num=0;
+//        for(int i =2;i<digit;i++){
+//            if(digit%i==0){
+//                PrimeNumber =false;
+//                break;
+//            }
+//        }
+//        if (PrimeNumber){
+//            System.out.println("this number is prime number");
+//        }
+//        else {
+//            System.out.println("this is not prime number");
+//        }
+
+        //better optimization
+//            boolean PrimeNumber=true;
+//            int num=0;
+//            for(int i =2;i*i<digit;i++){
+//                if(digit%i==0){
+//                    PrimeNumber =false;
+//                    break;
+//                }
+//            }
+//            if (PrimeNumber){
+//                System.out.println("this number is prime number");
+//            }
+//            else {
+//                System.out.println("this is not prime number");
+//            }
+//        }
+//    }
+
+
+    //Problem 6: Factorial
+//    static int Factorial(int digit){
+//        int fact=1;
+//        for (int i=1;i<=digit;i++){
+//            fact=fact*i;
+//        }
+//        return fact;
+//    }
+
+
+
+    //Problem 7: GCD (Greatest Common Divisor)
+
 }
