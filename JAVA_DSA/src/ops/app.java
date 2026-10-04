@@ -45,16 +45,16 @@ public class app {
 
 
         //Encapsulation
-        Student A = new Student(1,12,"rahul",3,"tina");
-        System.out.println(A.name);
-         System.out.println(A.getAge());
-         System.out.println(A.id);
-         System.out.println(A.nos);
-         System.out.println(A.getName());
-
-         A.bunk();
-         A.study();
-         A.sleep();
+//        Student A = new Student(1,12,"rahul",3,"tina");
+//        System.out.println(A.name);
+//         System.out.println(A.getAge());
+//         System.out.println(A.id);
+//         System.out.println(A.nos);
+//         System.out.println(A.getName());
+//
+//         A.bunk();
+//         A.study();
+//         A.sleep();
 //         A.gfChatting();
 
     }
